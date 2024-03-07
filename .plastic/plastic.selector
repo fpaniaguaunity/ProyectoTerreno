@@ -1,0 +1,4 @@
+repository "ProyectoTerreno@fpaniaguaformacion@cloud"
+  path "/"
+    br "/main"
+    co "/main"
