@@ -13,7 +13,7 @@ public class KeyManager : MonoBehaviour
             //2. Aparece en la interfaz de usuario
             imagenLlave.SetActive(true);
             //3. Añadimos al inventario
-            //MAÑANA SERÁ OTRO DÍA
+            GetComponent<Inventario>().AddItem(c.gameObject);//Añadir la llave al inventario
         }
     }
 }
