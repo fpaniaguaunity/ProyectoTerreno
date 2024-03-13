@@ -1392,6 +1392,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5197406010548921253, guid: bb51719f1fd156f41877bc033f36c606, type: 3}
       insertIndex: -1
       addedObject: {fileID: 911968594}
+    - targetCorrespondingSourceObject: {fileID: 5197406010548921253, guid: bb51719f1fd156f41877bc033f36c606, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 911968598}
   m_SourcePrefab: {fileID: 100100000, guid: bb51719f1fd156f41877bc033f36c606, type: 3}
 --- !u!1 &463169872
 GameObject:
@@ -2249,6 +2252,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arma: {fileID: 1092030449}
+  audioReload: {fileID: 8300000, guid: b491216c1b380ec42b7dfe0c1e6347b1, type: 3}
+--- !u!82 &911968598
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911968585}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &953724192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6964176169040178914, guid: bb51719f1fd156f41877bc033f36c606, type: 3}
@@ -2570,6 +2670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1092030448}
   - component: {fileID: 1092030449}
+  - component: {fileID: 1092030450}
   m_Layer: 0
   m_Name: Arma1
   m_TagString: Untagged
@@ -2612,6 +2713,104 @@ MonoBehaviour:
   fuerza: 100
   prefabBala: {fileID: 6964564891466581148, guid: e24a0cb6ebf4df44aa97b1e861dbda68, type: 3}
   transformSpawner: {fileID: 277283904}
+  audioShoot: {fileID: 8300000, guid: 2c6aedd40b673c948b90523fd63897eb, type: 3}
+  audioNoBullets: {fileID: 8300000, guid: 78c52261b2c9d5c48ad8c294ca277132, type: 3}
+--- !u!82 &1092030450
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092030447}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1128619309
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,7 +4527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9becef6af485da34588f6d4522b4c441, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.84
+      value: 11.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9becef6af485da34588f6d4522b4c441, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4874,12 +5073,12 @@ SceneRoots:
   - {fileID: 154315574}
   - {fileID: 122972990}
   - {fileID: 346609132}
+  - {fileID: 628954073}
   - {fileID: 398531746}
+  - {fileID: 460872460}
   - {fileID: 1187664147}
   - {fileID: 287042743}
   - {fileID: 1774979632}
-  - {fileID: 460872460}
   - {fileID: 55988953}
   - {fileID: 350516431}
-  - {fileID: 628954073}
   - {fileID: 1955482318}
